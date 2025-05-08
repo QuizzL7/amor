@@ -3,31 +3,41 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Diego & Estefani</title>
-  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; background: #fff0f5; color: #333; text-align: center; padding: 1rem; }
+    h1 { color: #c71585; margin-top: 1rem; }
+    p { max-width: 800px; margin: 1rem auto; line-height: 1.6; }
+    .gallery { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 2rem 0; }
+    .gallery img { width: 100%; border-radius: 10px; }
+    audio { margin-top: 1rem; }
+    @media(min-width: 600px) {
+      .gallery { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
 </head>
 <body>
-  <audio autoplay loop>
-    <source src="assets/melodia.mp3" type="audio/mpeg" />
-    Seu navegador não suporta áudio.
-  </audio>
-  <div class="container">
-    <h1>Diego & Estefani</h1>
-    <p class="subtitle">Desde 07/10/2017, escrevendo juntos a nossa linda história.</p>
-    
-    <div class="gallery">
-      <img src="assets/foto1.jpg" alt="Foto 1" />
-      <img src="assets/foto2.jpg" alt="Foto 2" />
-      <img src="assets/foto3.jpg" alt="Foto 3" />
-      <img src="assets/foto4.jpg" alt="Foto 4" />
-    </div>
+  <h1>Diego & Estefani</h1>
+  <p>
+    Tudo começou na escola, onde a amizade deu lugar a algo ainda mais especial. No dia 07 de outubro de 2017, demos início à nossa história de amor.
+    <br /><br />
+    Com o tempo, nosso laço se fortaleceu, enfrentamos o mundo juntos e fomos abençoados com o maior presente: nossa filha Ísis.
+    <br /><br />
+    Esta página é uma pequena homenagem ao nosso amor — à jornada de dois corações que se tornaram uma família. Que venham mais capítulos dessa linda história.
+  </p>
 
-    <div class="text">
-      <p>Nos conhecemos na escola, ainda jovens e cheios de sonhos. Primeiro veio a amizade, e depois, quando percebi que ela era a parte que faltava em mim, pedi a Estefani em namoro.</p>
-      <p>Desde aquele dia, em 07 de outubro de 2017, vivemos momentos incríveis, enfrentamos desafios e crescemos lado a lado. E a vida, com sua generosidade, nos presenteou com a Ísis, nossa luz, nossa filha, nosso maior amor.</p>
-      <p>Estefani, você é minha companheira, minha fortaleza e o amor da minha vida. Cada instante contigo é um presente. Obrigado por ser meu lar.</p>
-    </div>
+  <div class="gallery">
+    <img src="images/foto1.jpg" alt="Foto 1" />
+    <img src="images/foto2.jpg" alt="Foto 2" />
+    <img src="images/foto3.jpg" alt="Foto 3" />
+    <img src="images/foto4.jpg" alt="Foto 4" />
   </div>
+
+  <audio controls autoplay loop>
+    <source src="https://dl.dropboxusercontent.com/s/1uuwyzj3bo6mjso/perfeita-ed-sheeran.mp3" type="audio/mp3">
+    Seu navegador não suporta áudio HTML5.
+  </audio>
 </body>
 </html>
